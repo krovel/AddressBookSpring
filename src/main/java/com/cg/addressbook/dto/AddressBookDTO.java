@@ -1,6 +1,8 @@
 package com.cg.addressbook.dto;
 
-public class AddressBookDTO {
+import lombok.Data;
+
+public @Data class AddressBookDTO {
 
 	public String fullName;
 	public String address;
@@ -16,11 +18,5 @@ public class AddressBookDTO {
 		this.state = state;
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
-	}
-
-	@Override
-	public String toString() {
-		return "AddressBookDTO [fullName=" + fullName + ", address=" + address + ", city=" + city + ", state=" + state
-				+ ", zip=" + zip + ", phoneNumber=" + phoneNumber + "]";
 	}
 }
