@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.cg.addressbook.model.AddressBookData;
 
 @Repository
-public interface AddressBookRepository extends CrudRepository<AddressBookData, Integer> {
+public interface AddressBookRepository extends CrudRepository<AddressBookData, Long> {
 
 }
